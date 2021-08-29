@@ -10,7 +10,7 @@ def get_playwright():
 
 @fixture()
 def desktop_app(get_playwright):
-    app = App(get_playwright, base_url='http://127.0.0.1.8000')
+    app = App(get_playwright, base_url='http://127.0.0.1:8000')
     app.goto('/')
     yield app
     app.close()

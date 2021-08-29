@@ -19,8 +19,6 @@ class App:
     def navigate_to(self, menu: str):
         self.page.click(f"css=header >> text=\"{menu}\"")
 
-
-
     def login(self, login: str, password: str):
         self.page.fill("input[name=\"username\"]", login)
         self.page.fill("input[name=\"password\"]", password)
